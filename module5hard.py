@@ -33,8 +33,6 @@ class UrTube:
         for user in self.users:
             if user.nickname == nickname and user.password == hash(password):
                 self.current_user = user
-            else:
-                print("Пользователь не найден , повторите попытку.")
 
     def register(self, nickname, password, age):
         for user in self.users:
@@ -52,8 +50,6 @@ class UrTube:
         for vi in args:
             if vi not in self.videos:
                 self.videos.append(vi)
-            else:
-                print("...")
 
     def get_videos(self, word):
         word = word.lower()
